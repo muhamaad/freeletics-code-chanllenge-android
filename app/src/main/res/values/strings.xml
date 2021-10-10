@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FreeleticsCodeChanllenge</string>
+    <string name="repo_list_label">Repo List</string>
+    <string name="repo_Details_label">Repo Details</string>
+</resources>

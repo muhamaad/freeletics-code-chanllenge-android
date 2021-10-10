@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+                name="viewModel"
+                type="com.zarea.freeleticscodechanllenge.ui.RepoDetailsViewModel" />
+    </data>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/size_16">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_4"
+                android:text="@{viewModel.name}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/test_size_16"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel.starCount}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/test_size_16"/>
+
+        <Button
+                android:layout_gravity="center"
+                android:backgroundTint="@color/design_default_color_secondary_variant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_4"
+                android:onClick="@{viewModel::onBookmarkedClicked}"
+                android:text="@{viewModel.bookmarkedButtonText}" />
+
+    </LinearLayout>
+</layout>
